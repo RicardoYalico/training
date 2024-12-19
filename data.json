@@ -1,0 +1,20 @@
+{
+    "name": "data01",
+    "jobs": [
+        {
+            "id": 1,
+            "name": "developer",
+            "type": "remote"
+        },
+        {
+            "id": 2,
+            "name": "enginner",
+            "type": "hibryd"
+        },
+        {
+            "id": 3,
+            "name": "analyst",
+            "type": "presencial"
+        }
+    ]
+}
