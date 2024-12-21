@@ -7,10 +7,22 @@ class Program
     {   
         string input = Console.ReadLine();
 
-        if(input.Length <= Math.Pow(10,3)){
-            string output = input[0].ToString().ToUpper() + input.Remove(0,1);
+        if(input.Length <= 100){
 
-            Console.WriteLine(output);
+            List<string> letters = new List<string>();
+
+            foreach (var letter in input)
+            {
+                if(!letters.Contains(letter.ToString()))
+                    letters.Add(letter.ToString());
+            }
+
+            if(letters.Count%2 == 0){
+                Console.WriteLine("CHAT WITH HER!");
+            } else {
+                Console.WriteLine("IGNORE HIM!");
+            }
+
         }
 
     }
